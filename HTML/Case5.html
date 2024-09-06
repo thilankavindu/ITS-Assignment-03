@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../CSS/normalizeCSS.css">
+    <style>
+
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+
+        section>div{
+            border: 1px solid black;
+        }
+
+        section>div:first-child{
+            background-color: #fc0000;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        section>div:nth-child(2){
+            background-color: #007f01;
+            grid-column:2/3 ;
+            grid-row: 1/2;
+        }
+
+        section>div:nth-child(3){
+            background-color: #fd4500;
+            grid-column:3/4 ;
+            grid-row: 1/2;
+        }
+
+        section>div:nth-child(4){
+            background-color: #80007e;
+            grid-column:4/5 ;
+            grid-row: 1/2;
+        }
+
+
+        section>div:nth-child(5){
+            background-color: #fd1493;
+            grid-column:1/2 ;
+            grid-row: 2/3;
+        }
+
+        section>div:nth-child(6){
+            background-color: #0000fc;
+            grid-column:2/3 ;
+            grid-row: 2/3;
+        }
+
+
+        section>div:nth-child(7){
+            background-color: #a42b2a;
+            grid-column:3/4 ;
+            grid-row: 2/3;
+        }
+        section>div:nth-child(8){
+            background-color: #ec80ed;
+            grid-column:4/5 ;
+            grid-row: 2/3;
+        }
+
+        section>div:nth-child(9){
+            background-color: #4b0080;
+            grid-column:1/2 ;
+            grid-row: 3/4;
+        }
+        section>div:nth-child(10){
+            background-color: #fcd600;
+            grid-column:2/3 ;
+            grid-row: 3/4;
+        }
+
+        section>div:nth-child(11){
+            background-color: #609c9f;
+            grid-column:3/4 ;
+            grid-row: 3/4;
+        }
+
+        section>div:nth-child(12){
+            background-color: #00fdfd;
+            grid-column:4/5 ;
+            grid-row: 3/4;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>

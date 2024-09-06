@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Description">
+    <meta name="keyword" content="Relative,absolute,CSS,HTML,positioning">
+    <meta name="author" content="Kavindu_Thilan">
+    <link rel="icon" type="image/x-icon" href="../Assets/WebIcon.png">
+    <link rel="stylesheet" href="../CSS/normalizeCSS.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Case : 2</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: white;
+            height: 80px;
+            position: relative;
+            border: 1px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        header > nav {
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header > img {
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        header > nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header > nav > ul > li {
+            display: inline;
+            margin: 0 10px;
+            font-family: 'Moderustic', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #7f7f7f;
+            color: white;
+            position: relative;
+        }
+
+        footer > div {
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Moderustic', sans-serif;
+            font-weight: 600;
+        }
+
+        main {
+            background-color: black;
+            position: relative;
+            display: flex;
+        }
+
+        aside {
+            background: #4c0181;
+            color: white;
+            width: 250px;
+            position: relative;
+            top: -2px;
+            padding: 20px 0;
+        }
+
+        aside > nav > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        aside > nav > ul > li {
+            padding: 16px;
+            font-family: 'Moderustic', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        aside > nav > ul > li:hover {
+            background-color: #4c0181;
+        }
+
+        main > section {
+            flex: 1;
+            background-color: white;
+            font-family: "monospace", Calibri;
+            font-optical-sizing: auto;
+            font-style: normal;
+            padding: 7px;
+        }
+
+        main > section > section {
+            position: relative;
+            height: 300px;
+        }
+
+        main > section > section > div {
+            border: 2px solid lightgreen;
+            border-color: #000000 black #8fec8f #000000;
+            background: url("../Assets/gif/monkey.gif");
+            background-size: cover;
+            background-position: center;
+            width: calc(100% / 3);
+            height: 300px;
+            position: absolute;
+        }
+
+        main > section > section > div:nth-child(2) {
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        main > section > section > div:last-child {
+            right: 0;
+            margin: auto;
+        }
+
+        main > section > p {
+            position: relative;
+            left: 10px;
+            line-height: 1.5;
+        }
+
+        main > section > p:first-child {
+            margin-top: 0;
+        }
+
+        main > section > p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="../Assets/Ijse_logo.png" alt="IJSE Logo">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <aside>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contacts</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet dis
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur
+        </p>
+    </section>
+</main>
+
+<footer>
+    <div>Developed by IJSE</div>
+</footer>
+
+</body>
+</html>
